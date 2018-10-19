@@ -75,6 +75,11 @@ a {
     width: 225px;
 }
 
+#identification #firstName, #identSubmit {
+    text-align: center;
+    margin: 5px 0;
+}
+
 #welcome {
     margin: 10% auto 0;
 }
@@ -82,11 +87,14 @@ a {
 #search {
     margin: 0 auto;
     font-size: 1.125em;
+    max-width: 100%;
 }
 
 #search #searchInput {
-    /* width: 250px; */
+    border-radius: 5px;
+    text-align: center;
 }
+
 
 #about,
 #bio,
@@ -96,7 +104,6 @@ a {
     margin: 5% auto 0;
     font-size: 1.25em;
     color: #fe921f;
-    color: 
 }
 
 #skills {
@@ -140,6 +147,9 @@ a {
 /* ETC. */
 /* //// */
 
+textarea:focus, input:focus{
+    outline: none;
+}
 
 ::-webkit-scrollbar { 
     display: none; 
