@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
 *, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -18,21 +18,31 @@ html, body {
 
 body {
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: #fe921f;
 }
 
 /* ///////// */
 /* MAIN BODY */
 /* ///////// */
 
-#particle-js {
+#particles-js {
     background-color: black;
-    height: 400px;
-}
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  #mainBody {
+    position: relative;
+  }
 
 #mainBody {
     display: flex;
@@ -50,8 +60,7 @@ a {
 #about,
 #bio,
 #skills,
-#social,
-#portfolio {
+#social {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -72,6 +81,22 @@ a {
 
 #search {
     margin: 0 auto;
+    font-size: 1.125em;
+}
+
+#search #searchInput {
+    /* width: 250px; */
+}
+
+#about,
+#bio,
+#skills,
+#social,
+#portfolio {
+    margin: 5% auto 0;
+    font-size: 1.25em;
+    color: #fe921f;
+    color: 
 }
 
 #skills {
@@ -85,8 +110,30 @@ a {
     line-height: 2.5%;
 }
 
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: auto;
+    color: #fe921f;
+    align-self: center;
+}
 
+.imgPortWrap {
+    margin: 10px;
+}
 
+.imgPort img {
+    max-width: 100%;
+    width: 300px;
+}
+
+.imgPortWrap p {
+    align-self: start;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-top: 7px;
+}
 
 
 /* //// */

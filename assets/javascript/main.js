@@ -8,6 +8,9 @@
 
 function init() {
 
+    $('#identification').hide();
+    $('#identification').fadeIn(1500);
+
     $('#welcomeHead').hide()
     $('#welcomeReveal').hide()
 
@@ -29,7 +32,7 @@ function init() {
 
         $('#identification').fadeOut(500);
 
-        var firstName = $('#firstName').val().trim().charAt(0);
+        var firstName = $('#firstName').val().trim().charAt(0).toUpperCase();
         var favNum = Math.floor((Math.random() * 1000) + 100);
 
         var welcomeName = document.getElementById("welcomeHead");

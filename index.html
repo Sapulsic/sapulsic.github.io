@@ -78,15 +78,69 @@
 
         <div id="social">
             
-            <p id="socialTextLinkedin"><a href="https://www.linkedin.com/in/carlos-barahona-b28305135/"><i class="fab fa-linkedin"></i> Linkedin</a></p>
-            <p id="socialTextGithub"><a href="https://github.com/Sapulsic"><i class="fab fa-github"></i> Github</a></p>
-            <p id="socialTextInstagram"><a href="https://www.instagram.com/solr_c/"><i class="fab fa-instagram"></i> Instagram</a></p>
+            <p id="socialTextLinkedin"><a href="https://www.linkedin.com/in/carlos-barahona-b28305135/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></p>
+            <p id="socialTextGithub"><a href="https://github.com/Sapulsic" target="_blank"><i class="fab fa-github"></i> Github</a></p>
+            <p id="socialTextInstagram"><a href="https://www.instagram.com/solr_c/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
 
         </div>
 
         <div id="portfolio">
-
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/SafeSpace/" target="_blank">
+                        <img src="assets/images/SafeSpace.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript, JQuery, Firebase, UIkit,<br>Socrata API, Google's Geocoding & <br>Geolocation API</p>
+                <p>Safe Space</p>
+            </div>
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/TrainTime/" target="_blank">
+                        <img src="assets/images/TrainTime.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript, JQuery, Firebase, UIkit</p>
+                <p>Train Time</p>
+            </div>
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/GifTastic/" target="_blank">
+                        <img src="assets/images/GifTastic.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript, JQuery, Giphy API</p>
+                <p>Gif Tastic</p>
+            </div>
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/TriviaGame/" target="_blank">
+                        <img src="assets/images/TriviaGame.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript, JQuery</p>
+                <p>Trivia Game</p>
+            </div>
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/unit-4-game/" target="_blank">
+                        <img src="assets/images/Crystal Collector.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript, JQuery</p>
+                <p>Crystal Collector</p>
+            </div>
+            <div class="imgPortWrap">
+                <div class="imgPort">
+                    <a href="https://sapulsic.github.io/Word-Guess-Game/" target="_blank">
+                        <img src="assets/images/Word Guess Game.PNG" alt="">
+                    </a>
+                </div>
+                <p>HTML, CSS, JavaScript</p>
+                <p>Word Guess Game</p>
+            </div>
         </div>
+        
 
     </div>
 
@@ -97,8 +151,11 @@
     <!-- Particles.js -->.
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <script src="assets/javascript/particles.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script type="text/javascript">
+        particlesJS.load('particles-js', 'assets/javascript/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
