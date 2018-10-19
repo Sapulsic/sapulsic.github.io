@@ -21,10 +21,18 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* ///////// */
 /* MAIN BODY */
 /* ///////// */
+
+#particle-js {
+    background-color: black;
+    height: 400px;
+}
 
 #mainBody {
     display: flex;
@@ -33,7 +41,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 
 #identification,
@@ -51,6 +59,30 @@ body {
     margin: auto;
     color: white;
     text-align: center;
+}
+
+#identification {
+    margin: 20% auto;
+    width: 225px;
+}
+
+#welcome {
+    margin: 10% auto 0;
+}
+
+#search {
+    margin: 0 auto;
+}
+
+#skills {
+
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.5%;
 }
 
 

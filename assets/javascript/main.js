@@ -8,7 +8,6 @@
 
 function init() {
 
-    // $('#welcome').hide()
     $('#welcomeHead').hide()
     $('#welcomeReveal').hide()
 
@@ -28,7 +27,7 @@ function init() {
     $('#identSubmit').on('click', function(e) {
         e.preventDefault()
 
-        $('#identification').fadeOut(1000);
+        $('#identification').fadeOut(500);
 
         var firstName = $('#firstName').val().trim().charAt(0);
         var favNum = Math.floor((Math.random() * 1000) + 100);
@@ -40,7 +39,7 @@ function init() {
         welcomeName.appendChild(welcomeNameText);
 
         delayWelcomeHead = setTimeout(function() {
-            $('#welcomeHead').fadeIn(1000)
+            $('#welcomeHead').fadeIn(1000).animate({top: '10%'});
         }, 1000);
     
         delayWelcomeReveal = setTimeout(function() {
@@ -63,7 +62,7 @@ function init() {
     function call() {
         $('#searchInput').bind("enterKey",function(e){
 
-            if ($('#searchInput').val().trim() === "about") {
+            if ($('#searchInput').val().trim().toLowerCase() === "about") {
                 delayChoices = setTimeout(function() {
                     $('#about').fadeIn(500);
                 }, 750);
@@ -71,7 +70,7 @@ function init() {
                 $('#searchInput').val("");
             }
 
-            else if ($('#searchInput').val().trim() === "bio") {
+            else if ($('#searchInput').val().trim().toLowerCase() === "bio") {
                 delayChoices = setTimeout(function() {
                     $('#bio').fadeIn(500);
                 }, 750);
@@ -79,21 +78,21 @@ function init() {
                 $('#searchInput').val("");
             }
             
-            else if ($('#searchInput').val().trim() === "skills") {
+            else if ($('#searchInput').val().trim().toLowerCase() === "skills") {
                 delayChoices = setTimeout(function() {
                     $('#skills').fadeIn(500);
                 }, 750);
                 $('#about, #bio, #contact, #social, #portfolio').fadeOut(250);
                 $('#searchInput').val("");
             }
-            else if ($('#searchInput').val().trim() === "social") {
+            else if ($('#searchInput').val().trim().toLowerCase() === "social") {
                 delayChoices = setTimeout(function() {
                     $('#social').fadeIn(500);
                 }, 750);
                 $('#about, #bio, #skills, #contact, #portfolio').fadeOut(250);
                 $('#searchInput').val("");
             }
-            else if ($('#searchInput').val().trim() === "portfolio") {
+            else if ($('#searchInput').val().trim().toLowerCase() === "portfolio") {
                 delayChoices = setTimeout(function() {
                     $('#portfolio').fadeIn(500);
                 }, 750);

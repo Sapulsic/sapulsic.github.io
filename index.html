@@ -15,14 +15,19 @@
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- UIKit -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
 
 </head>
 <body>
     
+    <div id="particles-js"></div>
+
     <div id="mainBody">
 
         <div id="identification">
             
+            <h3>Input your alias:</h3>
             <input id="firstName" type="text" placeholder="First Name">
             <!-- <input id="favNum" type="text" placeholder="Three Numbers" minlength="3" maxlength="3"> -->
             <button id="identSubmit" type="submit">Submit</button>
@@ -31,8 +36,8 @@
 
         <div id="welcome">
             
-            <h2 id="welcomeHead">Welcome Sparten</h2>
-            <h3 id="welcomeReveal">I'm Front-End Developer Carlos Barahona Jr.</h3>
+            <p id="welcomeHead">Welcome Sparten</p>
+            <p id="welcomeReveal">I'm Carlos Barahona Jr.</p>
 
 
         </div>
@@ -41,7 +46,7 @@
         <div id="search">
             
             <p id="searchText">What would you like to know?</p>
-            <p id="searchChoices">[about], [bio], [skills], [social], [portfolio]</p>
+            <p id="searchChoices">About, Bio, Skills, Social, Portfolio</p>
             <input id="searchInput" type="text">
 
         </div>
@@ -76,10 +81,9 @@
 
         <div id="social">
             
-            <p id="socialText">
-                <a href="https://www.linkedin.com/in/carlos-barahona-b28305135/"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="https://github.com/Sapulsic"><i class="fab fa-github"></i> Github</a>
-            </p>
+            <p id="socialTextLinkedin"><a href="https://www.linkedin.com/in/carlos-barahona-b28305135/"><i class="fab fa-linkedin"></i> Linkedin</a></p>
+            <p id="socialTextGithub"><a href="https://github.com/Sapulsic"><i class="fab fa-github"></i> Github</a></p>
+            <p id="socialTextInstagram"><a href="https://www.instagram.com/solr_c/"><i class="fab fa-instagram"></i> Instagram</a></p>
 
         </div>
 
@@ -92,6 +96,16 @@
 
     <!-- AOS JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Particles.js -->.
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="assets/javascript/particles.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+    <!-- UIKit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
