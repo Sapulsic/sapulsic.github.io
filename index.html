@@ -5,12 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Carlos Barahona Jr. - Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
     
     <div id="mainBody">
+
+        <div id="identification">
+            
+            <input id="firstName" type="text" placeholder="First Name">
+            <!-- <input id="favNum" type="text" placeholder="Three Numbers" minlength="3" maxlength="3"> -->
+            <button id="identSubmit" type="submit">Submit</button>
+
+        </div>
+
+        <div id="welcome">
+            
+            <h2 id="welcomeHead">Welcome Sparten</h2>
+            <h3 id="welcomeReveal">I'm Front-End Developer Carlos Barahona Jr.</h3>
+
+
+        </div>
+
+
+        <div id="search">
+            
+            <p id="searchText">What would you like to know?</p>
+            <p id="searchChoices">[about], [bio], [skills], [social], [portfolio]</p>
+            <input id="searchInput" type="text">
+
+        </div>
 
         <div id="about">
 
@@ -43,21 +77,25 @@
         <div id="social">
             
             <p id="socialText">
-                <a href="https://www.linkedin.com/in/carlos-barahona-b28305135/">Linkedin</a>
-                <a href="https://github.com/Sapulsic">Github</a>
+                <a href="https://www.linkedin.com/in/carlos-barahona-b28305135/"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="https://github.com/Sapulsic"><i class="fab fa-github"></i> Github</a>
             </p>
 
         </div>
 
-        <div id="portfolio0">
-            
+        <div id="portfolio">
+
         </div>
 
     </div>
 
 
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-    <script src="main.js"></script>
+    <script src="assets/javascript/main.js"></script>
 </body>
 </html>

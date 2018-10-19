@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    /* background: url(../images/OniBG3.jpg) no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ///////// */
+/* MAIN BODY */
+/* ///////// */
+
+#mainBody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#identification,
+#welcome,
+#search,
+#about,
+#bio,
+#skills,
+#social,
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* //// */
+/* ETC. */
+/* //// */
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
