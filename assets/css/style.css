@@ -119,7 +119,7 @@ a {
 #portfolio {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     margin: 10px;
     height: auto;
